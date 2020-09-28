@@ -11,11 +11,16 @@ Seja bem vindo ao repositório proveniente do Desafio 2 do Agilizei Bootcamp. Ne
   - Execução dos testes utilizando o Electron:
 
     - Login:
-      ![](cypress/fixtures/login.gif)
+    
+    ![](cypress/fixtures/login.gif)
+
 
     - Cadastro:
-      ![](cypress/fixtures/cadastro.gif)
+    
+    ![](cypress/fixtures/cadastro.gif)
+
 
     - Articles:
-      ![](cypress/fixtures/articles.gif)
+    
+    ![](cypress/fixtures/articles.gif)
     
