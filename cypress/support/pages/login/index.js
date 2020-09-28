@@ -1,5 +1,7 @@
 const el = require('./elements').ELEMENTS;
 
+import routes from '../../routes';
+
 class Login {
 
     acessarLogin(){
@@ -15,6 +17,26 @@ class Login {
         cy.get(el.submitBtn).click();
     }
 
+    validarLogin(){
+
+        // Validar rotas
+        cy.wait(`@${routes.as.postUserLogin}`).then((postUserLoginResponse) => {
+            expect(postUserLoginResponse.status).to.eq(200);
+        });
+
+        cy.wait(`@${routes.as.getTags}`).then((getTagsResponse) => {
+            expect(getTagsResponse.status).to.eq(200);
+        });
+
+        cy.wait(`@${routes.as.getFeed}`).then((getFeedResponse) => {
+            expect(getFeedResponse.status).to.eq(200);
+        });
+
+        // Validações em tela
+        cy.get(el.userFeed).should('contain','Your Feed');
+        cy.get(el.userLink).should('contain', Cypress.config().user.username);
+
+    }
 }
 
 export default new Login();

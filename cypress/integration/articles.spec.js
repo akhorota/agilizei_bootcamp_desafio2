@@ -18,7 +18,7 @@ context('Publicação', () => {
         articles.submeterArtigo();
 
         // Validação
-
         articles.validarArtigoCriado();
+
     });
 });
