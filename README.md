@@ -6,16 +6,16 @@ Seja bem vindo ao repositório proveniente do Desafio 2 do Agilizei Bootcamp. Ne
 
   - Execução dos testes na Pipeline do Azure DevOps:
 
-  ![](cypress\fixtures\test_results_azure.png)
+    ![](cypress/fixtures/test_results_azure.png)
 
   - Execução dos testes utilizando o Electron:
 
     - Login:
-    ![](cypress\videos\login.spec.js.mp4)
+      ![](cypress/fixtures/login.gif)
 
     - Cadastro:
-    ![](cypress\videos\cadastro.spec.js.mp4)
+      ![](cypress/fixtures/cadastro.gif)
 
     - Articles:
-    ![](cypress\videos\articles.spec.js.mp4)
+      ![](cypress/fixtures/articles.gif)
     
